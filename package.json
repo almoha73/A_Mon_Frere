@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "a_mon_frere",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almoha73/A_Mon_Frere.git"
+  },
+  "author": "agnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almoha73/A_Mon_Frere/issues"
+  },
+  "homepage": "https://github.com/almoha73/A_Mon_Frere#readme",
+  "description": ""
+}
