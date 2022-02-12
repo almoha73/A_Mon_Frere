@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .modal-container{
     //display: none;
     visibility: hidden;
@@ -28,11 +30,8 @@
         height: 100%;
         opacity: 0;
         transition: opacity 0.4s 0.2s ease-out;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-color: #91523F;
+        @include abstracts.background;
+        background-color: abstracts.$color-secondary;
     }
     .modal{
         opacity: 0;
@@ -42,7 +41,7 @@
         max-height: 700px;
         overflow: scroll;
         padding: 30px;
-        background-color: #fffEDE;
+        background-color: abstracts.$color-primary;
         border-radius: 5px;
         position: absolute;
         top: 50%;
@@ -64,15 +63,15 @@
             top: 10px;
             right: 10px;
             cursor: pointer;
-            background-color: #91523F;
-            color: #fffEDE;
+            background-color: abstracts.$color-secondary;
+            color: abstracts.$color-primary;
         }
         h1{
             margin-bottom: 35px;
             font-family: 'Akaya Telivigala', cursive;
             font-weight: 500;
             font-size: 30px;
-            color: #91523F;
+            color: abstracts.$color-secondary;
             text-align: center;
             @media (max-width: 600px){
                 font-size: 20px;
