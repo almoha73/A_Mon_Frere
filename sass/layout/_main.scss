@@ -67,7 +67,7 @@ h1{
        font-size: 18px;
     }
     &:hover{
-        color: #225784;
+        color: #343C42;
         background-color: abstracts.$color-primary;
         box-shadow: 0 0 10px abstracts.$color-primary, 0 0 40px abstracts.$color-primary, 0 0 80px abstracts.$color-primary;
         transition-delay: 1s;
@@ -132,7 +132,7 @@ h1{
 }
 
 .arrow{
-    margin-top: 40px;
+    margin-top: 35px;
     width: 32px;
     height: 32px;
 }
@@ -144,6 +144,9 @@ li{
     right: 40px;
     a{
         cursor: pointer;
+        & hover{
+            transform: scale(1.02);
+        }
     }
 
 }
