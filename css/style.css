@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -65,11 +66,12 @@ h1 span.fade:nth-child(3), h1 span.fade:nth-child(11), h1 span.fade:nth-child(14
   padding: 15px 30px;
   border-radius: 16px;
   color: #fffEDE;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-decoration: none;
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
+  font-family: "Trispace", sans-serif;
 }
 .temoignage:hover {
   color: #225784;
@@ -171,6 +173,9 @@ ul li img {
   transform: translate(-50%, -50%);
   transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
 }
+.modal-container.active .email, .modal-container.active .twitter {
+  opacity: 0;
+}
 .modal-container .overlay {
   width: 100%;
   height: 100%;
@@ -226,12 +231,23 @@ ul li img {
   color: #91523F;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .modal-container .modal h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
 .modal-container .modal p {
   line-height: 1.4;
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   text-align: justify;
   font-size: 18px;
+}
+@media (max-width: 600px) {
+  .modal-container .modal p {
+    font-size: 14px;
+  }
 }
 .modal-container .modal p span {
   display: inline-block;

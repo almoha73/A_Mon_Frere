@@ -19,6 +19,9 @@
             transform: translate(-50%, -50%);
             transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
         }
+        & .email, & .twitter{
+            opacity: 0;
+        }
     }
     .overlay{
         width: 100%;
@@ -71,6 +74,10 @@
             font-size: 30px;
             color: #91523F;
             text-align: center;
+            @media (max-width: 600px){
+                font-size: 20px;
+                margin-top: 20px;
+            }
         }
         p{
             line-height: 1.4;
@@ -78,6 +85,9 @@
             font-family: 'Roboto', sans-serif;
             text-align: justify;
             font-size: 18px;
+            @media (max-width: 600px){
+                font-size: 14px;
+            }
             span{
                 display: inline-block;
                 font-family: 'Akaya Telivigala', cursive;
