@@ -27,6 +27,7 @@ h1{
         width: 94%;
         font-size: 8vmin;
         text-align: center;
+        color: #91523F
     }
     // @media (min-width: 375px){
     //     font-size: 7vmax;
@@ -55,6 +56,7 @@ h1{
     position: relative;
     display: inline-block;
     padding: 15px 30px;
+    border-radius: 16px;
     color: #fffEDE;
     letter-spacing: 4px;
     text-decoration: none;
@@ -128,7 +130,7 @@ h1{
 }
 
 .arrow{
-    margin-top: 30px;
+    margin-top: 40px;
     width: 32px;
     height: 32px;
 }
@@ -138,11 +140,15 @@ li{
     position: absolute;
     bottom: 20px;
     right: 40px;
+    a{
+        cursor: pointer;
+    }
 
 }
 ul li img{
     width: 48px;
     margin-left: 20px;
 }
+
     
     
