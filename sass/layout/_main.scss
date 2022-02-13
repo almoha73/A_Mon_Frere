@@ -163,6 +163,9 @@ ul li img{
         opacity: 0;
         transform: translateY(10px);
         transition: opacity 0.3s, transform 0.2s;
+        @media (max-width: 600px){
+            bottom: 350%;
+        }
     }
     &:hover::after{
         opacity: 1;

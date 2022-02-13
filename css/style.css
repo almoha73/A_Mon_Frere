@@ -193,6 +193,11 @@ ul li img {
   transform: translateY(10px);
   transition: opacity 0.3s, transform 0.2s;
 }
+@media (max-width: 600px) {
+  [data-tooltip]::after {
+    bottom: 350%;
+  }
+}
 [data-tooltip]:hover::after {
   opacity: 1;
   visibility: visible;
