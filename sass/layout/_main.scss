@@ -52,7 +52,7 @@ h1{
 }
 
 .temoignage{
-    height: 68px;
+    height: 63px;
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -108,6 +108,10 @@ h1{
             background: linear-gradient(360deg, transparent, abstracts.$color-primary);
             animation: droit 4s 3s infinite;
         }
+        
+    }
+    p.texte{
+        line-height: 30px;
     }
 }
 
