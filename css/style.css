@@ -160,6 +160,36 @@ ul li img {
   margin-left: 20px;
 }
 
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 200px;
+  left: calc(50% - 90px);
+  bottom: 500%;
+  text-align: center;
+  box-sizing: border-box;
+  color: #343c42;
+  background-color: #fffEDE;
+  opacity: 0.75;
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.2s;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .modal-container {
   visibility: hidden;
   position: fixed;
