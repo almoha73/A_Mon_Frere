@@ -1,13 +1,9 @@
 {
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "sass": "^1.49.7"
-  },
   "name": "a_mon_frere",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass sass/main.scss css/style.css -w"
+    "start": "python3 -m http.server 8000"
   },
   "repository": {
     "type": "git",

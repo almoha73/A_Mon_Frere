@@ -32,7 +32,10 @@ const modalTriggers = document.querySelectorAll('.modal-trigger');
 
 modalTriggers.forEach(trigger => trigger.addEventListener('click', toggleModal));
 
-function toggleModal(){
-    modalContainer.classList.toggle("active");
+function toggleModal(event){
+    if (event.target.classList.contains('close-modal')) {
+        event.stopPropagation();
+    }
+    modalContainer.classList.toggle("hidden");
 }
     
